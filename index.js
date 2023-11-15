@@ -24,10 +24,11 @@
             h2.innerHTML = '';
 
             // Add "html element name:" back inside the h2
-            h2.appendChild(document.createTextNode('html element name:'));
+            const prefix = document.createElement('span');
+            prefix.textContent = 'html element name:';
+            h2.appendChild(prefix);
 
             // Append the span to the h2
             h2.appendChild(span);
         });
     });
-
