@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-        const strongElements = document.querySelectorAll('h2 strong');
+        const h2Elements = document.querySelectorAll('h2');
 
         const colorClasses = [
             'blue', 'red', 'orange', 'green', 'medium-blue',
@@ -8,8 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
             'grey', 'black'
         ];
 
-        strongElements.forEach((strong, index) => {
+        h2Elements.forEach((h2, index) => {
+            // Create a span element
+            const span = document.createElement('span');
+            
+            // Extract the text after "html element name:"
+            const restOfString = h2.innerText.split('html element name: ')[1];
+            
+            // Apply the color class to the span
             const colorClass = colorClasses[index % colorClasses.length];
-            strong.classList.add(colorClass);
+            span.classList.add(colorClass);
+
+            // Add the rest of the string as text content to the span
+            span.textContent = restOfString;
+
+            // Empty the content of the h2
+            h2.innerHTML = '';
+
+            // Append the span to the h2
+            h2.appendChild(span);
         });
     });
