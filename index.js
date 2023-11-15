@@ -17,15 +17,9 @@
             const colorClass = colorClasses[index % colorClasses.length];
             span.classList.add(colorClass);
 
-            // Append the content of the h2 to the span
-            span.innerHTML = h2.innerHTML;
-
-            // Empty the content of the h2
-            h2.innerHTML = '';
-
-            // Add "html element name:" back inside the h2
+            // Add "html element name:" to the h2
             const prefix = document.createElement('span');
-            prefix.textContent = 'html element name:';
+            prefix.textContent = 'html element name: ';
             h2.appendChild(prefix);
 
             // Append the span to the h2
