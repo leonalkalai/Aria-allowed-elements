@@ -2,20 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #202124; /* Black */
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #F1F3F4;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2 {
-    color: #333;
+h1, h2, h3, h4, h5, h6 {
+    color: #4285F4; /* Medium blue */
+}
+
+a {
+    color: #4285F4; /* Medium blue */
+}
+
+a:hover {
+    color: #174EA6; /* Blue */
 }
 
 ul {
@@ -25,6 +34,8 @@ ul {
 
 li {
     margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 /* Responsive Styles */
@@ -46,7 +57,7 @@ li {
 
     li {
         font-size: 0.9em;
-        width: 45%; /* Adjust based on the number of items per row */
+        width: 45%;
     }
 }
 
@@ -62,6 +73,26 @@ li {
 
     li {
         font-size: 1em;
-        width: 30%; /* Adjust based on the number of items per row */
+        width: 30%;
     }
 }
+
+/* Color Palette */
+li:nth-child(1) { background-color: #0061b3; color: #FFFFFF; } /* Blue */
+li:nth-child(2) { background-color: #006ecc; color: #FFFFFF; } /* Blue */
+li:nth-child(3) { background-color: #007ce6; color: #FFFFFF; } /* Blue */
+li:nth-child(4) { background-color: #008aff; color: #FFFFFF; } /* Blue */
+li:nth-child(5) { background-color: #1a96ff; color: #FFFFFF; } /* Blue */
+li:nth-child(6) { background-color: #33a1ff; color: #FFFFFF; } /* Blue */
+li:nth-child(7) { background-color: #4dadff; color: #FFFFFF; } /* Blue */
+
+/* Google News Color Palette */
+h2 {
+    color: #4285F4; /* Medium blue */
+}
+
+h3, h4, h5 {
+    color: #9AA0A6; /* Grey */
+}
+
+/* Add styles for other elements as needed */
