@@ -15,9 +15,31 @@ section {
     align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
+    color: #9AA0A6; /* Grey */
+}
+
+h2 {
     color: #4285F4; /* Medium blue */
 }
+
+/* Add classes for each color */
+.blue { background-color: #174EA6; color: #FFFFFF; }
+.red { background-color: #A50E0E; color: #FFFFFF; }
+.orange { background-color: #E37400; color: #FFFFFF; }
+.green { background-color: #0D652D; color: #FFFFFF; }
+.medium-blue { background-color: #4285F4; color: #FFFFFF; }
+.medium-red { background-color: #EA4335; color: #FFFFFF; }
+.yellow { background-color: #FBBC04; color: #FFFFFF; }
+.medium-green { background-color: #34A853; color: #FFFFFF; }
+.light-blue { background-color: #D2E3FC; color: #202124; }
+.light-red { background-color: #FAD2CF; color: #202124; }
+.light-yellow { background-color: #FEEFC3; color: #202124; }
+.light-green { background-color: #CEEAD6; color: #202124; }
+.light-grey { background-color: #F1F3F4; color: #202124; }
+.grey { background-color: #9AA0A6; color: #FFFFFF; }
+.black { background-color: #202124; color: #FFFFFF; }
+/* Add more classes for the remaining colors */
 
 a {
     color: #4285F4; /* Medium blue */
@@ -47,6 +69,7 @@ li {
 
     h2 {
         font-size: 1.5em;
+        color: #174EA6; /* Blue */
     }
 
     ul {
@@ -77,22 +100,5 @@ li {
     }
 }
 
-/* Color Palette */
-li:nth-child(1) { background-color: #0061b3; color: #FFFFFF; } /* Blue */
-li:nth-child(2) { background-color: #006ecc; color: #FFFFFF; } /* Blue */
-li:nth-child(3) { background-color: #007ce6; color: #FFFFFF; } /* Blue */
-li:nth-child(4) { background-color: #008aff; color: #FFFFFF; } /* Blue */
-li:nth-child(5) { background-color: #1a96ff; color: #FFFFFF; } /* Blue */
-li:nth-child(6) { background-color: #33a1ff; color: #FFFFFF; } /* Blue */
-li:nth-child(7) { background-color: #4dadff; color: #FFFFFF; } /* Blue */
-
 /* Google News Color Palette */
-h2 {
-    color: #4285F4; /* Medium blue */
-}
-
-h3, h4, h5 {
-    color: #9AA0A6; /* Grey */
-}
-
 /* Add styles for other elements as needed */
