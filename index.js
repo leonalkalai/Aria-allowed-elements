@@ -23,7 +23,7 @@
             span.appendChild(prefix);
 
             // Append the span to the h2
-            h2.innerHTML(span);
+            h2.innerHTML+=span;
             
         });
     });
