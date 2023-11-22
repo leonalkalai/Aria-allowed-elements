@@ -23,7 +23,7 @@
             span.appendChild(prefix);
 
             // Append the span to the h2
-            h2.innerHTML=`html element name: ${span.innerHTML}`;
+            h2.innerHTML=`html element name: ${span.innerText}`;
             
             
         });
