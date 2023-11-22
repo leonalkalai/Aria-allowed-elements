@@ -19,11 +19,11 @@
 
             // Add "html element name:" to the h2
             const prefix = document.createElement('span');
-            prefix.textContent = `html element name: ${h2.value}`;
+            prefix.textContent = `html element name: ${h2.innerHTML}`;
             span.appendChild(prefix);
 
             // Append the span to the h2
-            h2.appendChild(span);
+            h2.innerHTML(span);
             
         });
     });
