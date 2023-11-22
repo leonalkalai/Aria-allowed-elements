@@ -15,16 +15,16 @@
 
             // Apply the color class to the span
             const colorClass = colorClasses[index % colorClasses.length];
-            
+            span.classList.add(colorClass);
 
             // Add "html element name:" to the h2
             const prefix = document.createElement('span');
-            prefix.textContent = `html element name: ${h2.innerHTML}`;
+            prefix.textContent = `${h2.innerHTML}`;
             span.appendChild(prefix);
 
             // Append the span to the h2
-            h2.innerHTML=span.textContent;
-            span.classList.add(colorClass);
+            h2.appendChild(`html element name: ${span}`);
+            
             
         });
     });
